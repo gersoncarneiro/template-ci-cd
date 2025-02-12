@@ -126,7 +126,7 @@ jobs:
       if: env.DESTROY != 'true'
       run: terraform apply -auto-approve -input=false
 
-   - name: Slack Notification
+    - name: Slack Notification
       uses: rtCamp/action-slack-notify@v2
       env:
         SLACK_CHANNEL: deploy-build
@@ -136,4 +136,4 @@ jobs:
         SLACK_TITLE: Foi realizado o deploy da infraestrutura
         SLACK_USERNAME: Deploy Infra
         SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
-  
+    
