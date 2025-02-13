@@ -5,3 +5,4 @@ Dockerfile
 LICENSE
 README.md
 test.py
+ecs-task-definition.json
