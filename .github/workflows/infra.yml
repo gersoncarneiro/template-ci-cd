@@ -136,4 +136,3 @@ jobs:
         SLACK_TITLE: Foi realizado o deploy da infraestrutura
         SLACK_USERNAME: Deploy Infra
         SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
-    
